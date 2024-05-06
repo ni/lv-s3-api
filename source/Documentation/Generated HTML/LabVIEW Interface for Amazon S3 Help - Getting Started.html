@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><title>LabVIEW Interface for Amazon S3 - Getting Started</title>
+
+</head>
+<body style="height: 313px;">
+<noscript>
+<p class="Body">JavaScript is disabled. <a
+href="lvhelp.chm::/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%">
+</noscript>
+<h1>LabVIEW Interface for Amazon S3 </h1>
+<strong>Installed With:</strong> VI Package Manager
+<h2>Getting Started with LabVIEW Interface for Amazon S3</h2>
+<ol>
+<h3><li>Registering for Amazon S3</li>
+</h3>
+<p>The first step to use this toolkit is to register an AWS
+account at the <a href="https://aws.amazon.com/">Amazon
+Web Services portal</a>.</p>
+<p>After registration has been completed, you will be notified
+by
+e-mail.</p>
+<h3><li>AWS Account Security Credentials</li>
+</h3>
+<p>When you create an AWS Account, AWS assigns the following
+credentials to you:</p>
+<ul>
+<li>Access Key ID (a 20-character, alphanumeric string). For
+example: AKIAIOSFODNN7EXAMPLE</li>
+<li>Secret Access Key (a 40-character string). For example:
+wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY</li>
+</ul>
+The Access Key ID uniquely identifies an AWS Account. You
+can use these AWS Account credentials to send authenticated requests to
+Amazon S3. You will need these Security Credentials while using this
+toolkit.<br>
+Your Access Key ID and Secret Access Key are displayed when you create
+your AWS account. They are not e-mailed to you. If you need to see them
+again, you can view them at any time from your AWS account.<br>
+<ul>
+<li>Go to the Amazon Web Services web site at
+http://aws.amazon.com.</li>
+<li>Click the Account tab.</li>
+<li>Click Security Credentials.</li>
+</ul>
+If you have not already signed in, Sign In or Create an AWS Account
+page displays. You must sign in before you can see your AWS account
+security credentials.
+Your access credentials, Access Key ID and Secret Access Key, are
+displayed on the resulting Security Credentials page.
+<h3><li>Using toolkit VIs</li>
+</h3>
+<h4>Using Examples</h4>
+This toolkit comes with some example applications that demonstrate the
+usage of the API elements.<br>
+You can locate these examples using NI Example Finder (located under
+Help -&gt; Find Examples...) by searching for the keyword "s3" or
+browsing the Examples tree (Networking -&gt; Internet &amp;
+Web).
+<h4>Creating you own Application</h4>
+<p>You can find the API functions on the "Functions -&gt;
+Addons -&gt; LabVIEW Interface for Amazon S3" palette.</p>
+<p>To start using S3, first you have to store your Security
+credentials in
+the toolkit's global credential store within your application. Use the
+"Set AWS Credentials.vi"
+to set and store your credentials.
+(For security purposes there is no way to read out the credentials from
+the
+store.) You only need to store the credentials once, before calling any
+S3 API calls.</p>
+<p>After storing your credentials, you can use other S3
+functions:</p>
+<ul>
+<li>You can list the buckets owned by you using the "List
+Buckets" function.</li>
+<li>Operations with/on buckets are found under the "Bucket
+Operations" subpalette.</li>
+<li>Operations with/on objects are found under the "Object
+Operations" subpalette.</li>
+<li>If you are working with large objects, you can use the
+Multipart upload functions under the "Object Operations -&gt;
+Advanced Object Operations -&gt; Multipart Upload" subpalette.
+These functions provide you with the ability to upload your data in
+smaller chunks.</li>
+<li>Functions on the "Low-Level" subpalette allows you to
+implement Amazon S3 API calls that are not implemented in this toolkit.
+Thes VIs are also used by the higher level functions of this toolkit.</li>
+</ul>
+<h3><li>Further help and support</li>
+</h3>
+<p>For more help or support on this toolkit please visit
+the <a href="https://decibel.ni.com/content/groups/labview-interface-for-amazon-s3">"LabVIEW Interface for Amazon S3"</a>
+NI Community group (<a href="https://decibel.ni.com/content/groups/labview-interface-for-amazon-s3">
+https://decibel.ni.com/content/groups/labview-interface-for-amazon-s3</a>)</p>
+</ol>
+</body></html>

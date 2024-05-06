@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><title>LabVIEW Interface for Amazon S3 - About Amazon S3</title>
+
+</head><body>
+<noscript>
+<p class="Body">JavaScript is disabled. <a
+href="lvhelp.chm::/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%">
+</noscript>
+<h1>LabVIEW Interface for Amazon S3 </h1>
+<strong>Installed With:</strong> VI Package Manager
+<h2>About Amazon S3</h2>
+<p>Amazon S3 is cloud-based storage for the Internet. It provides
+an interface to store and retrieve any amount of data, at any time,
+from anywhere on the web.&nbsp;It gives any developer access to the
+same highly scalable, reliable, secure, fast, inexpensive
+infrastructure that Amazon uses to run its own global network of web
+sites.</p>
+<p>For a detailed description of the Amazon S3 service, please
+visit the <a href="https://aws.amazon.com/s3/">Amazon
+Simple Storage Service page</a>. A brief excerpt from that page
+is presented below:</p>
+<h3>Data Security</h3>
+<p>Data stored in Amazon S3 is secure by default; only bucket and
+object owners have access to the Amazon S3 resources they create. For
+customers who must comply with regulatory standards such as PCI and
+HIPAA, Amazon S3&#8217;s data protection features can be used as part of an
+overall strategy to achieve compliance.</p>
+<h3>Data Durability and Reliability</h3>
+<p>Amazon S3 provides a highly durable storage infrastructure
+designed for mission-critical and primary data storage. Objects are
+redundantly stored on multiple devices across multiple facilities in an
+Amazon S3 Region. To help ensure durability, Amazon S3 PUT and COPY
+operations synchronously store your data across multiple facilities
+before returning SUCCESS. Once stored, Amazon S3 maintains the
+durability of your objects by quickly detecting and repairing any lost
+redundancy.</p>
+<p>Amazon S3&#8217;s standard storage is: </p>
+<ul>
+<li>Backed with the <a href="https://aws.amazon.com/s3-sla">Amazon
+S3 Service Level Agreement</a>.</li>
+<li>Designed to provide 99.999999999% durability and 99.99%
+availability of objects over a given year. </li>
+<li>Designed to sustain the concurrent loss of data in two
+facilities.</li>
+</ul>
+Amazon S3 provides further protection via Versioning. You can use
+Versioning to preserve, retrieve, and restore every version of every
+object stored in your Amazon S3 bucket. This allows you to easily
+recover from both unintended user actions and application failures.
+<h3>Reduced Redundancy Storage (RRS)</h3>
+Reduced Redundancy Storage (RRS) is a storage option within Amazon S3
+that enables customers to reduce their costs by storing non-critical,
+reproducible data at lower levels of redundancy than Amazon S3&#8217;s
+standard storage. It provides a cost-effective, highly available
+solution for distributing or sharing content that is durably stored
+elsewhere, or for storing thumbnails, transcoded media, or other
+processed data that can be easily reproduced. Reduced Redundancy
+Storage is:
+<ul>
+<li>Backed with the <a href="https://aws.amazon.com/s3-sla">Amazon
+S3 Service Level Agreement</a>.</li>
+<li>Designed to provide 99.99% durability and 99.99%
+availability of objects over a given year. This durability level
+corresponds to an average annual expected loss of 0.01% of objects. </li>
+<li>Designed to sustain the loss of data in a single facility.</li>
+</ul>
+<h3>Amazon S3 Concepts</h3>
+<h4>Buckets</h4>
+A bucket is a container for objects stored in Amazon S3. Every object
+is contained in a bucket. For example, if the object named
+photos/puppy.jpg is stored in the johnsmith bucket, then it is
+addressable using the URL
+http://johnsmith.s3.amazonaws.com/photos/puppy.jpg<br>
+Buckets serve several purposes: they organize the Amazon S3 namespace
+at the highest level, they identify the account responsible for storage
+and data transfer charges, they play a role in access control, and they
+serve as the unit of aggregation for usage reporting.
+<br>
+You can configure buckets so that they are created in a specific
+Region. For more information, see <a href="http://docs.amazonwebservices.com/AmazonS3/latest/dev/LocationSelection.html">Buckets
+and Regions</a>. You can also configure a bucket so that every
+time an object is added to it, Amazon S3 generates a unique version ID
+and assigns it to the object. For more information, see <a href="http://docs.amazonwebservices.com/AmazonS3/latest/dev/Versioning.html">Versioning</a>.<br>
+For more information about buckets, see <a href="http://docs.amazonwebservices.com/AmazonS3/latest/dev/UsingBucket.html">Working
+with Amazon S3 Buckets</a>.
+<h4>Objects</h4>
+Objects are the fundamental entities stored in Amazon S3. Objects
+consist of object data and metadata. The data portion is opaque to
+Amazon S3. The metadata is a set of name-value pairs that describe the
+object. These include some default metadata such as the date last
+modified, and standard HTTP metadata such as Content-Type. The
+developer can also specify custom metadata at the time the Object is
+stored.<br>
+An object is uniquely identified within a bucket by a key (name) and a
+version ID. For more information, see <a href="http://docs.amazonwebservices.com/AmazonS3/latest/dev/Introduction.html#BasicsKeys">Keys</a>
+and <a href="http://docs.amazonwebservices.com/AmazonS3/latest/dev/Versioning.html">Versioning</a>.
+<h4>Keys</h4>
+A&nbsp;key is the unique identifier for an object within a bucket.
+Every
+object in a bucket has exactly one key. Because the combination of a
+bucket, key, and version ID uniquely identify each object, Amazon S3
+can be thought of as a basic data map between "bucket + key + version"
+and the object itself. Every object in Amazon S3 can be uniquely
+addressed through the combination of the web service endpoint, bucket
+name, key, and optionally, a version. For example, in the URL
+http://doc.s3.amazonaws.com/2006-03-01/AmazonS3.wsdl, "doc" is the name
+of the bucket and "2006-03-01/AmazonS3.wsdl" is the key.<br>
+<h4>Regions</h4>
+You can choose the geographical Region where Amazon S3 will store the
+buckets you create. You might choose a Region to optimize latency,
+minimize costs, or address regulatory requirements.
+</body></html>

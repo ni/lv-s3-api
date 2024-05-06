@@ -1,0 +1,62 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled File=.\LabVIEW Interface for Amazon S3.chm
+Contents File=Table of Contents.hhc
+Default Topic=LabVIEW Interface for Amazon S3 Help.html
+Display compile progress=No
+Index File=Index.hhk
+Language=0x409 English (United States)
+Title=HTML Help
+Binary TOC=No
+Binary Index=Yes
+Default Window=
+Default Font=
+Full-text search=Yes
+Auto Index=No
+Create CHI file=No
+Error log file=_errorlog.txt
+Full text search stop list file=
+Display compile notes=Yes
+
+[FILES]
+Create Bucket.html
+Delete Bucket Policy.html
+Delete Bucket Website Configuration.html
+Delete Bucket.html
+Delete Object.html
+Get Bucket ACL.html
+Get Bucket Location.html
+Get Bucket Logging.html
+Get Bucket Policy.html
+Get Bucket RequestPayment Configuration.html
+Get Bucket Versioning Configuration.html
+Get Bucket Website Configuration.html
+Get Object (RAW data).html
+Get Object Size.html
+Get Object to File (Sequential).html
+LabVIEW Interface for Amazon S3 Help - About Amazon S3.html
+LabVIEW Interface for Amazon S3 Help - Getting Started.html
+LabVIEW Interface for Amazon S3 Help.html
+List Buckets.html
+List Objects.html
+LL_DELETE Bucket.html
+LL_DELETE Object (Core).html
+LL_GET Bucket (Core).html
+LL_GET Bucket.html
+LL_GET Object (Core).html
+LL_GET Object.html
+LL_GET Service.html
+LL_POST Object (Core).html
+LL_PUT Bucket (Core).html
+LL_PUT Object (Core).html
+Low-Level HTTP Request AWS v4.html
+Put Object from file (Multipart).html
+Put Object from RAW data.html
+Set AWS Creditials.html
+Set Bucket Notification Configuration.html
+Set Bucket RequestPayment Configuration.html
+Set Bucket Versioning.html
+Set Bucket Website Configuration.html
+
+[INFOTYPES]
+
